@@ -1,0 +1,32 @@
+class Book {
+    String title;
+    String author;
+    double price;
+
+    // Default Constructor
+    Book() {
+        System.out.println("Default Constructor Called");
+        title = "Unknown";
+        author = "Unknown";
+        price = 0.0;
+        System.out.println(title + " | " + author + " | " + price);
+    }
+
+    // Constructor with title & author
+    Book(String title, String author) {
+        System.out.println("Constructor 2 Called");
+        this.title = title;
+        this.author = author;
+        this.price = 0.0;
+        System.out.println(title + " | " + author + " | " + price);
+    }
+
+    // Constructor with all parameters
+    Book(String title, String author, double price) {
+        System.out.println("Constructor 3 Called");
+        this.title = title;
+        this.author = author;
+        this.price = price;
+        System.out.println(title + " | " + author + " | " + price);
+    }
+}
